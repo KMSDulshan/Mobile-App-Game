@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D6CECE"
+    android:backgroundTint="#000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--first we add image-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="342dp"
+        android:layout_height="275dp"
+        app:srcCompat="@drawable/firstimage" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Score : 0"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/highscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="#2AA5B5"
+        android:text="High Score: 0"
+        android:textAlignment="center"
+        android:textColor="#6FACDD"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/StartBtn"
+        android:layout_width="176dp"
+        android:layout_height="73dp"
+        android:layout_margin="15dp"
+        android:text="Start"
+        android:textSize="24sp"
+        app:backgroundTint="#3943FD" />
+
+</LinearLayout>
